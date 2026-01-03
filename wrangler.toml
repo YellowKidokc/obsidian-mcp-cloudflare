@@ -4,11 +4,13 @@ account_id = "bc912b2f78ee155bbdf8dd84426f24d5"
 compatibility_date = "2025-01-01"
 
 [vars]
-STORJ_ACCESS_KEY = "jukfq5ljc4zzzmhsf5qsvapxnl3a"
-STORJ_SECRET_KEY = "j34z3ewnjkn7itojzp7bybdghq5czdh4srxnomci6324scteerybo"
 STORJ_ENDPOINT = "https://gateway.storjshare.io"
 STORJ_BUCKET = "obsidianeiafluence"
-STORJ_S3_REGION="eu1"
+STORJ_S3_REGION = "eu1"
+
+# IMPORTANT: Set these secrets using `wrangler secret put`:
+#   wrangler secret put STORJ_ACCESS_KEY
+#   wrangler secret put STORJ_SECRET_KEY
 [observability]
   [observability.logs]
   enabled = false
